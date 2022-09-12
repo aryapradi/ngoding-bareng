@@ -1,0 +1,48 @@
+:root {
+    --accent: #fe662a;
+    --primary: #2b3138;
+    --secondary: #202329;
+    --text-primary: #fff;
+    --text-secondary: #ccc;
+    --text-bg : #252932;
+    --dark: #222832;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    background-color: var(--secondary);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+      background-color: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+}
+
+h3 {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+p {
+    font-size: 0.7em;
+    color: var(--text-secondary);
+    max-width: 25em;
+    line-height: 21px;
+}
+
