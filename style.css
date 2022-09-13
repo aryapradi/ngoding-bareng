@@ -139,3 +139,139 @@ header {
     z-index: 1;
 }
 
+.header-body h1 {
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    margin: 2em 0 1em 0;
+    margin-left: 10vw;
+}
+
+.main-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-img img{
+    height: 60vh;
+    min-height: 30em;
+    position: relative;
+    z-index: 1;
+}
+
+.text, .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-right {
+    margin: 0 0 2em 0;
+    line-height: 2.3;
+    margin-right: 5vw;
+}
+
+.links a {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.play-btn {
+    border: 1px var(--accent) solid;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.play-btn:hover{
+    background: var(--text-primary);
+}
+
+.play-btn div{
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 12px var(--accent) solid;
+    border-bottom: 6px solid transparent;
+}
+
+.text-left, .main-link {
+    margin-left: 5vw;
+}
+
+.text-left, 
+.text-right, 
+.text-left div, 
+.text-right div,
+.play-btn,
+.main-link,
+.main-link span {
+    position: relative;
+}
+
+.text-left::before,
+.text-right::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 10em;
+    width: 35em;
+    z-index: 0;
+}
+
+.text-left::before {
+    background-color: var(--primary);
+    right: 50%;
+}
+
+.text-right::before {
+    background-color: var(--secondary);
+    left: 30%;
+}
+
+.main-link::before {
+    content: '';
+    background: var(--accent);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%);
+    height: 2em;
+    width: 25em;
+    transition: .4s;
+}
+
+.main-link:hover:before {
+    right: -1em;
+}
+
+.background-text {
+    margin: 0;
+    font-size: 8vw;
+    color: var(--text-bg);
+    line-height: 0.8em;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 0;
+}
+
+
+
+
